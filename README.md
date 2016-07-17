@@ -1,4 +1,15 @@
 
+## Games #
+
+### Demo #
+
+https://www.toptal.com/web/making-html5-canvas-based-game-with-angularjs-and-createjs
+
+### Bejeweled #
+
+http://www.createjs.com/getting-started/easeljs
+
+## Ref #
 
 ### Nunjucks #
 
@@ -18,6 +29,6 @@ var env = nunjucks.configure('/path/to/templates', {
 ### Run #
 
 ```
-cs site
+cd site
 http-server
 ```

@@ -7,25 +7,25 @@
     <meta charset="utf-8" />
 
     <title>{% block title %} Game Clones  {% endblock %}</title>
-  
+
     <meta name="author" content="John Francis Marion" />
     <meta name="description" content="This is a website." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://code.createjs.com/createjs-2015.11.26.combined.js"></script>
 </head>
 
 <body>
-    
+
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                
+
                 <a href="/" class="navbar-brand">Game Clones</a>
-                
+
                 <button class="navbar-toggle" type="button" data-target="#navbar-main" data-toggle="collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -35,9 +35,9 @@
             <div id="navbar-main" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        
+
                         <a id="games" class="dropdown-toggle" href="#" data-toggle="dropdown">Games <span class="caret"></span></a>
-                        
+
                         <ul class="dropdown-menu" aria-labelledby="dropdown-options">
                             {% for game in games %}
                                 {% if game.divider %}
@@ -55,26 +55,26 @@
                     <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
                 </ul>
             </div>
-            
+
         </div>
     </div>
     <div class="container">
-        
+
         {% if currentGameName %}
             <div class="page-header">
                 <h2><$ currentGameName $></h2>
             </div>
         {% endif %}
-        
+
         {% block content %}
         {% endblock %}
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+
     {% if currentGameSlug %}
-        <script src="/js/games/<$ currentGameSlug $>.ng.js"></script>
+        <script src="/js/games/<$ currentGameSlug $>.min.js"></script>
     {% endif %}
 </body>
 </html>

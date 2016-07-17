@@ -1,4 +1,21 @@
 
+## Dev #
+
+### Build #
+
+```
+gulp build
+```
+
+### Server #
+
+```
+cd site/
+http-server
+```
+
+This requires `npm install http-server -g`.
+
 ## Games #
 
 ### Demo #

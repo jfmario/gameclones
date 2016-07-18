@@ -1,0 +1,32 @@
+{
+  "name": "gameclones",
+  "version": "1.0.0",
+  "description": "### Build #",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "nunjucks": "^2.4.2"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfmario/gameclones.git"
+  },
+  "author": "John F Marion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfmario/gameclones/issues"
+  },
+  "homepage": "https://github.com/jfmario/gameclones#readme"
+}
